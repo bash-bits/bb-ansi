@@ -1,0 +1,27 @@
+Bash Bits ANSI Module v-1.0.0
+
+Copyright © 2022-2023 Darren (Ragdata) Poulton
+
+====================================================================
+ATTRIBUTIONS
+====================================================================
+
+This project incorporates ideas and / or code crafted by the following
+talented individuals:
+
+	- importpw/import
+	  Copyright © 2018-2020 the Import authors
+	  MIT Licensed
+
+	- niieani/bash-oo-framework
+	  Copyright © 2015 Bazyli Brzóska @ https://invent.life/
+	  MIT Licensed
+
+	- fidian/ansi
+	  Copyright © 2015 Tyler Akins
+	  MIT Licensed
+
+====================================================================
+         "We see much further, and reach much higher,
+      only because we stand upon the shoulders of giants"
+====================================================================
