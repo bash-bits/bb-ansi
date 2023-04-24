@@ -1,13 +1,16 @@
 <h1 align="center">
 
 <img src="https://user-images.githubusercontent.com/6827931/226166354-a7cfea07-00c0-4167-bf0a-adf323d9d125.png" alt="Bash Bits Modular Bash Library" />
+<br />
+<img src="https://raw.githubusercontent.com/bash-bits/.github/master/.github/media/bash_logo-128x128.png" alt="Bourne Again Shell" />
 
 [BB-ANSI v-1.0.0](https://github.com/bash-bits/bb-ansi/releases/tag/v-1.0.0)
 
 </h1>
 
 <h3 align="center"><em>
-The Bash Bits ANSI Module
+The Bash Bits ANSI Module<br />
+The life and soul of Bash-Bits 
 </em></h3>
 
 
@@ -38,19 +41,47 @@ The Bash Bits ANSI Module
 
 ## ⭐ [Project Overview](#toc)
 
-The Bash Bits ANSI Module - colour and style codes for ANSI terminals.
+The Bash Bits ANSI Module - colour and style codes for ANSI terminals.  This module contains not only all of the colour and style definitions to help make Bash-Bits attractive and fun to work with, it provides some of the more common "quality of life" enhancements to make every day with Bash-Bits that much easier.
+
+### [Branch Reliability](#toc)
+
+The Branch Reliability Table is a way for you to determine how close to the bleeding edge you're comfortable getting.
+
+If you need stability, then download a branch marked with 🟢
+
+If you're contributing code to the project, you'll want 🔴
+
+| Branch               |    Stability    | Code Age         | Reliability |
+|----------------------|:---------------:|------------------|:-----------:|
+| `master`             |  latest stable  | latest release   |     🟢      |
+| `develop`            | latest unstable | most recent code |     🔴      |
 
 [`^ Top`](#toc)
 
 ## ❓ [What's Included?](#toc)
 
+**Repository Files**
 
+- ✅ [bb-ansi.ini](src/bb-ansi.ini)
+- ✅ [bb-ansi.sh](src/bb-ansi.sh)
 
 [`^ Top`](#toc)
 
 ## 📂 [Installation](#toc)
 
+Like ALL other Bash-Bits Modules, BB-ANSI is "imported" using the [BB-Import Module](https://github.com/bash-bits/bb-import).  If you haven't yet installed BB-Import, perhaps you'd like to do so now?  It's as easy as running the following command in your terminal:
 
+```shell
+bash <(curl -sfLS https://raw.githubusercontent.com/bash-bits/bb-import/master/install.sh)
+```
+
+Once you've installed `BB-Import`, you can include BB-ANSI in ANY of your Bash projects by including the following code snippet at the top of each file:
+
+```shell
+#!/usr/bin/env bb-import
+
+bb::import bb-ansi
+```
 
 [`^ Top`](#toc)
 
