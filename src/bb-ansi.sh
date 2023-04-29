@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bb-import
 # shellcheck disable=SC2015,SC2155,SC2181
 # ==================================================================
 # bb-ansi
@@ -18,10 +18,13 @@
 # ==================================================================
 # VARIABLES
 # ==================================================================
-declare SYMBOL_ERROR
-declare SYMBOL_WARNING
-declare SYMBOL_INFO
-declare SYMBOL_SUCCESS
+#
+# SYMBOLS
+#
+[[ -z "${SYMBOL_ERROR}" ]] && declare -gx SYMBOL_ERROR="🚫"
+[[ -z "${SYMBOL_WARNING}" ]] && declare -gx SYMBOL_WARNING="⚠️"
+[[ -z "${SYMBOL_INFO}" ]] && declare -gx SYMBOL_INFO="ℹ️"
+[[ -z "${SYMBOL_SUCCESS}" ]] && declare -gx SYMBOL_SUCCESS="✅"
 # ==================================================================
 # FUNCTIONS
 # ==================================================================
