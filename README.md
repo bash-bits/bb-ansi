@@ -30,7 +30,8 @@ The Bash Bits ANSI Module<br /><br />
 
 #### _Elapsed Project Time_
 
-[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/75470218-a36b-41a8-b406-62957ad300b0.svg?style=for-the-badge)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/75470218-a36b-41a8-b406-62957ad300b0)
+[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/040ef189-9207-4523-abaa-6a3d954b35db.svg?style=for-the-badge)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/040ef189-9207-4523-abaa-6a3d954b35db)
+
 </div>
 
 <h4 align="center">
@@ -193,14 +194,6 @@ If you'd like to make a contribution, then please see the [**Bash Bits Contribut
 It's not just contributions of code that I'm looking for.  If you have any ideas or suggestions about how this project may be improved, don't hesitate to [open an issue][issues] and let me know!  Contributions of ALL kinds will be recognised here if they are made part of this project - thanks to the [All-Contributors][all-contributors] bot.
 
 [**VIEW PROJECT CONTRIBUTORS**](CONTRIBUTORS.md)
-
-[`^ Top`](#toc)
-
-## 👍 [Supporting the Project](#toc)
-
-The creation and maintenance of Open Source Software is definitely a labour of love - this is never going to be a path to riches.  The truth is, it takes not only a lot of time, it creates a substantial amount of personal expense (even when you're working on a shoestring) to keep these projects freely available for all.
-
-If you'd like more info about how you can help out, head to my [Sponsor's Page][sponsors]
 
 [`^ Top`](#toc)
 
