@@ -688,7 +688,13 @@ if [[ ! $(is::sourced) ]]; then
 	do
 		case "$1" in
 			-v|--version)
-				[[ -n "${2}" ]] && { ansi::version "${2}"; shift 2; } || { ansi::version; shift; }
+				if [[ -n "${2}" ]]; then
+					ansi::version "${2}"
+					shift 2
+				else
+					ansi::version
+					shift
+				fi
 				exitReturn 0
 				;;
 			--)
