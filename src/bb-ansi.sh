@@ -19,6 +19,12 @@
 # VARIABLES
 # ==================================================================
 #
+# BUILD VARIABLES
+#
+declare -gx ANSI_BUILD="x"
+declare -gx ANSI_VERSION="v-1.0.0"
+declare -gx ANSI_BUILD_DATE="20230718-0033"
+#
 # SYMBOLS
 #
 [[ -z "${SYMBOL_ERROR}" ]] && declare -gx SYMBOL_ERROR="🚫"
@@ -644,6 +650,55 @@ ansi::test::aliases()
 	echo "${UNDERLINE}UNDERLINE${NOUNDERLINE}"
 	echo
 }
+# ------------------------------------------------------------------
+# ansi::version
+# ------------------------------------------------------------------
+# @description Reports the version and build date of this release
+#
+# @noargs
+#
+# @stdout Version, Copyright, & Build Information
+# ------------------------------------------------------------------
+ansi::version()
+{
+	local verbosity="${1:-}"
+
+	if [[ -z "$verbosity" ]]; then
+		echo "${ANSI_VERSION}"
+	else
+		echo
+		echo "Bash-Bits Modular Bash Library"
+		echoWhite "BB-ANSI Module ${ANSI_VERSION}"
+		echo "Copyright © 2022-2023 Darren (Ragdata) Poulton"
+		echo "Build: ${ANSI_BUILD}"
+		echo "Build Date: ${ANSI_BUILD_DATE}"
+		echo
+	fi
+}
 # ==================================================================
 # MAIN
 # ==================================================================
+if [[ ! $(is::sourced) ]]; then
+	trap 'bb::errorHandler "LINENO" "BASH_LINENO" "${BASH_COMMAND}" "${?}"' ERR
+	options=$(getopt -l "version::" -o "v::" -a -- "$@")
+
+	evalset --"$options"
+
+	while true
+	do
+		case "$1" in
+			-v|--version)
+				[[ -n "${2}" ]] && { ansi::version "${2}"; shift 2; } || { ansi::version; shift; }
+				exitReturn 0
+				;;
+			--)
+				shift
+				break
+				;;
+			*)
+				echoError "Invalid Argument!"
+				exitReturn 2
+				;;
+		esac
+	done
+fi
