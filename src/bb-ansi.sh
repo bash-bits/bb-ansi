@@ -682,7 +682,7 @@ if [[ ! $(is::sourced) ]]; then
 	trap 'bb::errorHandler "LINENO" "BASH_LINENO" "${BASH_COMMAND}" "${?}"' ERR
 	options=$(getopt -l "version::" -o "v::" -a -- "$@")
 
-	evalset --"$options"
+	eval set --"$options"
 
 	while true
 	do
